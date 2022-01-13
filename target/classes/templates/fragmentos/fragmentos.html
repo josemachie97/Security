@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<!-- <!-- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  --> 
+<!-- <!-- 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  -->
+	
+<!-- <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --> 
+	
+<!-- <!-- 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"  -->
+<!-- <!-- 	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"> -->
+	
+<!-- 	</script> -->
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+
+	<header th:fragment="cabecalho">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" th:href="@{/index}">
+    	<img alt="Foto do FB" src="/img/Emblem_of_Mozambique.svg.png" width="30" height="24"> Emblema de Moz
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ">
+      	<li class="nav-item ">
+      		<a class="nav-link" th:href="@{/login}"> <i class="fas fa-home"></i> Login</a>
+      	</li>
+      	<li class="nav-item ">
+      		<a class="nav-link" th:href="@{/users}"> <i class="fas fa-list"></i> Lista de Usuarios</a>
+      	</li>
+      	<li class="nav-item ">
+      		<a class="nav-link" th:href="@{cadastro}"><i class="fas fa-user"></i> Cadastrar</a>
+     	 </li>
+      	<li class="nav-item ">
+      		<a class="nav-link "th:href="@{/logout}"> <i class="fas fa-sign"></i> Sair</a>
+      	</li>
+      </ul>
+      
+      </div>
+      </div>
+   </nav>
+	
+	
+	</header>
+	
+	
+	<footer th:fragment="rodape">
+	
+	</footer>
+
+
+
+</body>
+</html>
